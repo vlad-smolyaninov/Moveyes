@@ -4,7 +4,7 @@ import { Text } from "react-native"
 
 const MainView: React.FC = () => (
   <Layout>
-    <Text>Main</Text>
+    <Text>Main screen</Text>
   </Layout>
 )
 

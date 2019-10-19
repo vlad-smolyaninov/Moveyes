@@ -1,19 +1,17 @@
+import { Image, Text, View } from 'react-native';
+import { SafeAreaView } from 'react-navigation';
 import styled from 'styled-components';
-import {Image, Text, View} from 'react-native';
-import {SafeAreaView} from 'react-navigation';
 
 export const LayoutWrapper = styled(SafeAreaView)`
-  height: 100%;
-  display: flex;
   flex: 1;
   background: ${p => p.theme.color.main};
+  font-family: 'Open Sans';
 `;
 
 export const HeaderWrapper = styled(View)`
   z-index: 100;
   background: ${p => p.theme.color.main};
   height: 50px;
-
   elevation: 5;
   display: flex;
   flex-direction: row;
