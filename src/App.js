@@ -1,12 +1,13 @@
-import React from 'react';
-import {ThemeProvider} from 'styled-components';
-import theme from './services/styles/theme';
-import Router from './modules/router/Router';
+import React, { View } from 'react'
+import { ThemeProvider } from 'styled-components'
+import theme from './services/styles/theme'
+import Router from './modules/router/Router'
+import global from './services/styles/global'
 
 export default () => {
-  return (
-    <ThemeProvider theme={theme}>
-      <Router />
-    </ThemeProvider>
-  );
-};
+	return (
+		<ThemeProvider theme={theme}>
+			<Router />
+		</ThemeProvider>
+	)
+}
