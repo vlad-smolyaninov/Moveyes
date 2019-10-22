@@ -1,6 +1,6 @@
 import { Image, Text, View } from 'react-native'
 import { SafeAreaView } from 'react-navigation'
-import styled from 'styled-components'
+import styled from 'styled-components/native'
 
 export const LayoutWrapper = styled(SafeAreaView)`
   flex: 1;

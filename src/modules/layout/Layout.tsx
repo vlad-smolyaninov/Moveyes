@@ -6,16 +6,16 @@ import Header from './Header'
 import { ContentWrapper, LayoutWrapper } from './styled'
 
 export interface ILayout {
-	children: ReactNode
+  children: ReactNode
 }
 
 const Layout: React.SFC<ILayout> = ({ children }) => (
-	<LayoutWrapper>
-		<StatusBar barStyle='dark-content' backgroundColor={theme.color.main} />
-		<Header />
-		<ContentWrapper>{children}</ContentWrapper>
-		<Footer />
-	</LayoutWrapper>
+  <LayoutWrapper>
+    <StatusBar barStyle='dark-content' backgroundColor={theme.color.main} />
+    <Header />
+    <ContentWrapper>{children}</ContentWrapper>
+    <Footer />
+  </LayoutWrapper>
 )
 
 export default Layout

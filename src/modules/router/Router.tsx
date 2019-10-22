@@ -5,18 +5,18 @@ import Main from '../scenes/main/Main'
 import { TransitionConfiguration } from './animations'
 
 const AppNavigator = createStackNavigator(
-	{
-		Home: {
-			screen: Main
-		},
-		Details: {
-			screen: Layout
-		}
-	},
-	{
-		headerMode: 'none',
-		transitionConfig: TransitionConfiguration
-	}
+  {
+    Home: {
+      screen: Main
+    },
+    Details: {
+      screen: Layout
+    }
+  },
+  {
+    headerMode: 'none',
+    transitionConfig: TransitionConfiguration
+  }
 )
 
 export default createAppContainer(AppNavigator)
