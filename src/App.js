@@ -1,13 +1,19 @@
-import React, { View } from 'react'
-import { ThemeProvider } from 'styled-components/native'
-import theme from './services/styles/theme'
-import Router from './modules/router/Router'
-import global from './services/styles/global'
+import React from "react"
+import { ThemeProvider } from "styled-components/native"
+import theme from "./services/styles/theme"
+import Router from "./modules/router/Router"
+import setGlobalStyles from "./services/styles/global"
+import { Provider } from "mobx-react"
+import storesContext from "./stores"
 
-export default () => {
-	return (
-		<ThemeProvider theme={theme}>
-			<Router />
-		</ThemeProvider>
-	)
-}
+setGlobalStyles();
+
+const App = () => (
+  <Provider value={storesContext}>
+    <ThemeProvider theme={theme}>
+      <Router />
+    </ThemeProvider>
+  </Provider>
+)
+
+export default App
